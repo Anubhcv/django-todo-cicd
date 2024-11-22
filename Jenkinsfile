@@ -10,6 +10,7 @@ pipeline {
         stage("Clone Code"){
             steps {
                 echo "Cloning the code"
+                echo "update webhook"
                 git url:"https://github.com/ABHAY4321/django-todo-cicd.git", branch: "develop"
             }
         }
